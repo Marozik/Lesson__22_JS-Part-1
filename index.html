@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Налаштування поведінки в'юпорта -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 22 JS Part-1</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<div class="syntax">
+						<h2 class="syntax__title">Домашка JS (Основи синтаксису)</h2>
+						<div class="syntax__task task">
+							<h3 class="task__title">Варіант №1</h3>
+							<div class="task__body">
+								console.log('Learn JS'); Вірно
+							</div>
+						</div>
+						<div class="syntax__task task">
+							<h3 class="task__title">Варіант №2</h3>
+							<div class="task__body">
+								console.log('JS') 
+								<br>
+								console.log('Learn')
+								<br>
+								Вірно, але краще закінчувати команду ";"
+							</div>
+						</div>
+						<div class="syntax__task task">
+							<h3 class="task__title">Варіант №3</h3>
+							<div class="task__body">
+								console.log('JS') console.log('Learn')
+								Не вірно, викличе помилку. Команди які прописуються в один ряд мають закриватися ";"
+
+							</div>
+						</div>
+						<div class="syntax__task task">
+							<h3 class="task__title">Варіант №4</h3>
+							<div class="task__body">
+								console.log('Learn); Не вірний запис, все що відкрито має бути закритим
+								<br>
+								console.log('JS'); Вірний запис
+							</div>
+						</div>
+					</div>
+					<div class="variables">
+						<h2 class="variables__title">Домашка JS (Змінні в JS. LET, CONST, VAR)</h2>
+						<div class="variables__task task">
+							<h3 class="task__title">Завдання 1</h3>
+							<div class="task__body">
+								Придумай ім'я змінної для зберігання кольору очей користувача сайту
+								<br>
+								let userEyeColor = 'Green';
+							</div>
+						</div>
+						<div class="variables__task task">
+							<h3 class="task__title">Завдання 2</h3>
+							<div class="task__body">
+								Об'яви дві змінні - user і userName. Присвой значення "Вася" змінній userName. Зкопіюй значення змінної userName в змінну user. Виведи в консоль змінну user. Результат повинен бути Вася
+								<br>
+								let user;
+								<br>
+								let userName;
+								<br>
+								userName = 'Вася';
+								<br>
+								user = userName;
+								<br>
+								console.log(user);
+							</div>
+						</div>
+						<div class="variables__task task">
+							<h3 class="task__title">Завдання 3</h3>
+							<div class="task__body">
+								Який варіант або варіанти записані НЕ ВІРНО?
+								<br>
+								<br>
+								Варіант 1
+								<br>
+								let user = 'Вася' let age = 36
+								<br>
+								Запис не вірний, змінна має починатся з нового рядка і бажано закінчуватись ";"
+								<br>
+								let user = 'Вася';
+								<br>
+								let age = 36;
+								<br>
+								Вірний запис
+								<br>
+								<br>
+								Варіант 2
+								<br>
+								let myage = 36;
+								<br>
+								Запис не зовсім коректний, помилки не буде але ім'я змінної краще писати через lowerCamelCase (myAge)
+								<br>
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="data">
+						<h2 class="data__title">Домашка JS (Типи даних)</h2>
+						<div class="data__task task">
+							<h3 class="task__title">Варіант 1</h3>
+							<div class="task__body">
+								let userAge = 36;
+								<br>
+								let userInfo = "Freelancer ${userAge}";<br>Цей запис не вірний, потрібно використовувати зворотні лапки.
+								<br>
+								let userInfo = `Freelancer ${userAge}`;
+								<br>
+								Вірний запис
+							</div>
+						</div>
+						<div class="data__task task">
+							<h3 class="task__title">Варіант 2</h3>
+							<div class="task__body">
+								let userHeight = 145 / 0;
+								<br>
+								Поверне не NaN, а Infinity
+							</div>
+						</div>
+						<div class="data__task task">
+							<h3 class="task__title">Варіант 3</h3>
+							<div class="task__body">
+								let userName;
+								<br>
+								console.log(typeof userName);
+								<br>
+								Поверне тип данних не Null, а underfined
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
